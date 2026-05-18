@@ -1,0 +1,19 @@
+[project]
+name = "insightra-backend"
+version = "0.1.0"
+description = "Insightra FastAPI Backend"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard]>=0.136.1",
+    "uvicorn[standard]>=0.47.0",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.14.1",
+    "python-dotenv>=1.2.2",
+    "python-jose[cryptography]>=3.5.0",
+    "passlib[bcrypt]>=1.7.4",
+    "python-multipart>=0.0.29",
+]
+
+[tool.fastapi]
+entrypoint = "app.main:app"
